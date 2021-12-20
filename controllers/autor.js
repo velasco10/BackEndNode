@@ -1,7 +1,7 @@
 const ErrorResponse = require("../helper/errorResponse")
 const Autor = require("../models/Autor");
 
-exports.crearAutor = async (req, res, next) => {
+exports.createAutor = async (req, res, next) => {
   try {
     const autorData = await Autor.create(req.body);
     console.log("autor data", autorData);
